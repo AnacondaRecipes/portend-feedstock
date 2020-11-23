@@ -1,8 +1,8 @@
 {% set name = "portend" %}
-{% set version = "2.6" %}
+{% set version = "2.7.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "600dd54175e17e9347e5f3d4217aa8bcf4bf4fa5ffbc4df034e5ec1ba7cdaff5" %}
+{% set hash = "ac0e57ae557f75dc47467579980af152e8f60bc2139547eff8469777d9110379" %}
 
 package:
   name: {{ name|lower }}
