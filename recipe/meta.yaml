@@ -1,17 +1,13 @@
 {% set name = "portend" %}
-{% set version = "2.7.1" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "986ed9a278e64a87b5b5f4c21e61c25bebdce9919a92238d9c14c37a7416482b" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: aa9d40ab1f9e14bdb7d401f42210df35d017c9b97991baeb18568cedfb8c6489
 
 build:
   noarch: python
