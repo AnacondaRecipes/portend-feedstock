@@ -10,18 +10,18 @@ source:
   sha256: aa9d40ab1f9e14bdb7d401f42210df35d017c9b97991baeb18568cedfb8c6489
 
 build:
-  skip: true  # [py<39]
   number: 0
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed -vvv
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python
     - pip
+    - setuptools >=77
     - setuptools_scm >=3.4.1
-
   run:
-    - python >=3.6
+    - python
     - tempora >=1.8
 
 test:
