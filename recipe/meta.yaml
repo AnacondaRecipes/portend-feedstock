@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools >=77
     - setuptools_scm >=3.4.1
+    - wheel
   run:
     - python
     - tempora >=1.8
@@ -30,6 +31,8 @@ test:
   imports:
     - portend
   requires:
+    - python
+    - pip
     - pytest
   commands:
     - pip check
@@ -42,6 +45,7 @@ about:
   license: MIT
   license_family: MIT
   summary: TCP port monitoring utilities
+  description: A simple library for managing the availability of ports.
   dev_url: https://github.com/jaraco/portend
   doc_url: https://portend.readthedocs.io
 extra:
