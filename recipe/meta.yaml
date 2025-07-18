@@ -43,7 +43,7 @@ about:
   license_family: MIT
   summary: TCP port monitoring utilities
   dev_url: https://github.com/jaraco/portend
-
+  doc_url: https://portend.readthedocs.io
 extra:
   recipe-maintainers:
     - pmlandwehr
