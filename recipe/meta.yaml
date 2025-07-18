@@ -25,8 +25,15 @@ requirements:
     - tempora >=1.8
 
 test:
+  source_files:
+    - test_portend.py
   imports:
     - portend
+  requires:
+    - pytest
+  commands:
+    - pip check
+    - pytest -vv test_portend.py
 
 about:
   home: https://github.com/jaraco/portend
